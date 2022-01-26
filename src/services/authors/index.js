@@ -15,7 +15,6 @@ authorsRouter.post("/", (req, res) => {
   console.log("REQUEST BODY: ", req.body);
 
   const newauthor = { ...req.body, createdAt: new Date(), id: uniqid() };
-  console.log(newauthor);
 
   const authorsArray = JSON.parse(fs.readFileSync(authorsJSONPath));
 
@@ -42,6 +41,57 @@ authorsRouter.get("/:authorId", (req, res) => {
     (author) => author.id === req.params.authorId
   );
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  
   res.send(foundauthor);
 });
 
